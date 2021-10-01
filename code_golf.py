@@ -8,7 +8,7 @@ def finalQuizScore(h,l,r,o,t,p):s=900-int(.5*(p+3*r+6*h+4*l))-t-o;return('Sorry,
 l=[3,2,1.5,1,1,.5]
 def finalQuizScore(*a):s=900-int(sum(x*y for x,y in zip(l,a)));return('Sorry, y','Y')[s<100]+f'ou would need a {s}% on the final quiz to get an A-.'
 # finalQuizScore=lambda h,l,r,o,t,p: (f"{('Sorry, y','Y')[-((3*h+2*l+o+.5*p+1.5*r+t-900)//1)<100]}ou would need a {s}% on the final quiz to get an A-."
-# finalQuizScore=lambda h,l,r,o,t,p:('Y','Sorry, y')[(s:=900-int((p+3*r+6*h+4*l)/2)-t-o)>100]+f'ou would need a {s}% on the final quiz to get an A-.'
+finalQuizScore=lambda h,l,r,o,t,p:('Y','Sorry, y')[(s:=900-int((p+3*r+6*h+4*l)/2)-t-o)>100]+f'ou would need a {s}% on the final quiz to get an A-.'
 
 """
 required
